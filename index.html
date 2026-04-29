@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysium Bibliophilia | Livros Raros & Manuscritos Antigos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-navy { background-color: #0a1128; }
+        .text-gold { color: #c5a059; }
+        .border-gold { border-color: #c5a059; }
+        .btn-gold {
+            background-color: #c5a059;
+            color: #0a1128;
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: #b08d48;
+            transform: translateY(-2px);
+        }
+        .parchment {
+            background-color: #f4eee0;
+            background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+        }
+        .overlay-dark {
+            background: linear-gradient(rgba(10, 17, 40, 0.8), rgba(10, 17, 40, 0.9));
+        }
+        .book-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-navy/95 backdrop-blur-sm border-b border-gold/20 py-4 px-6 flex justify-between items-center">
+        <div class="text-gold text-2xl font-bold serif tracking-widest uppercase">
+            Elysium
+        </div>
+        <div class="hidden md:flex space-x-8 text-white/80 text-sm uppercase tracking-widest font-light">
+            <a href="#inicio" class="hover:text-gold transition">Início</a>
+            <a href="#catalogo" class="hover:text-gold transition">Catálogo</a>
+            <a href="#curadoria" class="hover:text-gold transition">Curadoria</a>
+            <a href="#contato" class="hover:text-gold transition">Contato</a>
+        </div>
+        <button class="border border-gold text-gold px-5 py-2 text-xs uppercase tracking-tighter hover:bg-gold hover:text-navy transition">
+            Área do Colecionador
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=2000" alt="Biblioteca Antiga" class="w-full h-full object-cover">
+            <div class="absolute inset-0 overlay-dark"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <span class="text-gold uppercase tracking-[0.3em] text-sm mb-4 block animate-fade-in">Exclusividade Bibliográfica</span>
+            <h1 class="text-5xl md:text-7xl text-white mb-6 leading-tight">Onde a História Repousa em <span class="italic text-gold">Suas Mãos</span></h1>
+            <p class="text-white/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                Curadoria especializada de primeiras edições, manuscritos iluminados e raridades que atravessaram séculos.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#catalogo" class="btn-gold px-10 py-4 rounded-sm font-semibold uppercase tracking-widest text-sm">
+                    Explorar Acervo
+                </a>
+                <a href="#contato" class="bg-transparent border border-white/30 text-white px-10 py-4 rounded-sm font-semibold uppercase tracking-widest text-sm hover:bg-white/10 transition">
+                    Agendar Avaliação
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 bg-white border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 serif">Autenticidade Certificada</h3>
+                <p class="text-slate-600 font-light">Cada exemplar é submetido a testes rigorosos de procedência e datação de papel.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 serif">Curadoria de Elite</h3>
+                <p class="text-slate-600 font-light">Buscamos obras desaparecidas em leilões internacionais e coleções privadas globais.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 serif">Rastreamento Histórico</h3>
+                <p class="text-slate-600 font-light">Entregamos o histórico completo de proprietários (proveniência) de cada livro.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Highlights -->
+    <section id="catalogo" class="py-24 parchment">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl md:text-5xl mb-4">Destaques do <span class="italic">Acervo</span></h2>
+                    <p class="text-slate-700 max-w-lg">Obras que definiram eras e agora aguardam um novo guardião.</p>
+                </div>
+                <a href="#" class="text-gold font-semibold uppercase tracking-widest text-xs border-b border-gold pb-1 hover:text-slate-900 transition">Ver Catálogo Completo</a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Book 1 -->
+                <div class="book-card bg-white p-4 shadow-sm transition-all duration-500 hover:shadow-xl">
+                    <div class="overflow-hidden mb-4 h-80 bg-slate-100 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=600" alt="Livro Raro 1" class="h-full w-full object-cover transition-transform duration-700">
+                    </div>
+                    <span class="text-[10px] text-gold uppercase tracking-[0.2em] font-bold">Século XVIII</span>
+                    <h4 class="text-xl font-bold mb-2 serif mt-1">Os Lusíadas (Edição 1880)</h4>
+                    <p class="text-slate-500 text-sm mb-4">Encadernação original em couro marroquino com detalhes em folha de ouro.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                        <span class="text-navy font-bold uppercase text-xs">Sob Consulta</span>
+                        <button class="text-gold hover:text-navy transition uppercase text-[10px] font-bold tracking-widest">Detalhes</button>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card bg-white p-4 shadow-sm transition-all duration-500 hover:shadow-xl">
+                    <div class="overflow-hidden mb-4 h-80 bg-slate-100 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=600" alt="Livro Raro 2" class="h-full w-full object-cover transition-transform duration-700">
+                    </div>
+                    <span class="text-[10px] text-gold uppercase tracking-[0.2em] font-bold">Iluminura</span>
+                    <h4 class="text-xl font-bold mb-2 serif mt-1">Manuscrito Devocional</h4>
+                    <p class="text-slate-500 text-sm mb-4">Folhas de velino com iniciais pintadas à mão e pigmentos de lápis-lazúli.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                        <span class="text-navy font-bold uppercase text-xs">Sob Consulta</span>
+                        <button class="text-gold hover:text-navy transition uppercase text-[10px] font-bold tracking-widest">Detalhes</button>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="book-card bg-white p-4 shadow-sm transition-all duration-500 hover:shadow-xl">
+                    <div class="overflow-hidden mb-4 h-80 bg-slate-100 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&q=80&w=600" alt="Livro Raro 3" class="h-full w-full object-cover transition-transform duration-700">
+                    </div>
+                    <span class="text-[10px] text-gold uppercase tracking-[0.2em] font-bold">Primeira Edição</span>
+                    <h4 class="text-xl font-bold mb-2 serif mt-1">A Comédia Humana</h4>
+                    <p class="text-slate-500 text-sm mb-4">Exemplar numerado de 1842. Rara preservação das guardas originais.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                        <span class="text-navy font-bold uppercase text-xs">Sob Consulta</span>
+                        <button class="text-gold hover:text-navy transition uppercase text-[10px] font-bold tracking-widest">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curatorship / Process -->
+    <section id="curadoria" class="bg-navy py-24 text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=1000" alt="Processo de Restauro" class="rounded-sm shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+                <div class="absolute -bottom-8 -right-8 w-48 h-48 border-2 border-gold/30 hidden md:block"></div>
+            </div>
+            <div>
+                <span class="text-gold uppercase tracking-[0.3em] text-xs mb-4 block">Processo Rigoroso</span>
+                <h2 class="text-4xl md:text-5xl mb-8 serif italic">A Arte da Preservação</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <span class="text-gold font-bold text-xl">01.</span>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Análise de Fibras</h4>
+                            <p class="text-white/60 text-sm">Utilizamos luz UV e microfotografia para identificar restaurações não documentadas.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-gold font-bold text-xl">02.</span>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Desacidificação Técnica</h4>
+                            <p class="text-white/60 text-sm">Tratamentos químicos especializados para interromper a degradação natural do papel antigo.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-gold font-bold text-xl">03.</span>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Seguro e Logística</h4>
+                            <p class="text-white/60 text-sm">Transporte blindado com controle climático para qualquer destino no mundo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-24 bg-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <svg class="w-12 h-12 text-gold/20 mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11.5M4.017 21L4.017 18C4.017 16.8954 4.91243 16 6.017 16H9.017C9.56928 16 10.017 15.5523 10.017 15V9C10.017 8.44772 9.56928 8 9.017 8H5.017C4.46472 8 4.017 8.44772 4.017 9V11.5" />
+            </svg>
+            <p class="text-2xl md:text-3xl serif italic leading-relaxed mb-8">
+                "Encontrei na Elysium não apenas um livro, mas um elo perdido com o século XVII. A documentação de proveniência é impecável."
+            </p>
+            <div class="uppercase tracking-[0.2em] text-xs font-bold">Dr. Alistair Vaughn</div>
+            <div class="text-slate-400 text-xs mt-1">Historiador e Colecionador Independente</div>
+        </div>
+    </section>
+
+    <!-- Newsletter VIP -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="bg-navy p-12 rounded-sm text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32" fill="white" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <h3 class="text-3xl mb-4 serif">Seja o primeiro a saber</h3>
+                <p class="text-white/60 mb-8 max-w-md mx-auto">Receba nosso catálogo de novas aquisições 48h antes do público geral. Exclusivo para membros da lista VIP.</p>
+                <form class="flex flex-col md:flex-row gap-2 max-w-lg mx-auto">
+                    <input type="email" placeholder="Seu melhor e-mail" class="flex-grow bg-white/10 border border-white/20 px-6 py-4 outline-none focus:border-gold transition">
+                    <button type="submit" class="btn-gold px-8 py-4 uppercase text-xs font-bold tracking-widest whitespace-nowrap">Entrar para o Círculo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-navy text-white/50 py-16 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-gold text-3xl font-bold serif tracking-widest uppercase mb-6">Elysium</div>
+                <p class="max-w-sm mb-6 font-light">Especialistas em curadoria bibliográfica de alto luxo e consultoria para formação de bibliotecas particulares.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gold transition text-xs uppercase tracking-widest">Instagram</a>
+                    <a href="#" class="hover:text-gold transition text-xs uppercase tracking-widest">LinkedIn</a>
+                    <a href="#" class="hover:text-gold transition text-xs uppercase tracking-widest">Catalog</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Escritórios</h4>
+                <p class="text-sm mb-2">Av. Paulista, 1000<br>São Paulo, SP</p>
+                <p class="text-sm">Old Bond Street, 24<br>London, UK</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Contato</h4>
+                <p class="text-sm mb-2">concierge@elysiumbooks.com</p>
+                <p class="text-sm">+55 11 99999-9999</p>
+                <p class="text-xs text-gold mt-4 font-bold">Atendimento exclusivo com hora marcada.</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] flex justify-between">
+            <span>© 2024 Elysium Bibliophilia</span>
+            <span>Design por Gemini Design Studio</span>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
